@@ -32,7 +32,7 @@ function check_web($server) {
 }
 
 if(isset($_GET['pw'])){
-    if($_GET['pw']==Pferdee){
+    if($_GET['pw']=="password"){
         if(isset($_GET['status'])) {
             file_put_contents('status.txt',$_GET['status']);
         } elseif(isset($_GET['maint'])) {
